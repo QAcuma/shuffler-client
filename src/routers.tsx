@@ -7,7 +7,7 @@ const withBasePath = (path: string) => `${process.env.REACT_APP_BASE_URL}${path}
 
 export const routes = [
   {
-    path: withBasePath('/ladder'),
+    path: withBasePath('/:id'),
     name: 'Еще',
     exact: true,
     element: <Statistic />
@@ -18,7 +18,7 @@ export const routes = [
     element: <Group />
   },
   {
-    path: withBasePath('/:id'),
+    path: withBasePath('/player/:id'),
     name: 'Исптория Игрока',
     element: <History />
   }

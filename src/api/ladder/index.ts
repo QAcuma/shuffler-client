@@ -18,12 +18,13 @@ export interface IPlayer {
 export interface ILadderData {
   players: IPlayer[] | [];
 }
+const pathName = window.location.pathname;
 
 const LadderApi = {
   getLadder(): Promise<AxiosResponse<IResponse<ILadderData>>> {
     const { discipline } = disciplineStore;
 
-    return RestAPI.get(`chat/sberworks?discipline=${discipline}`);
+    return RestAPI.get(`chat${pathName}?discipline=${discipline}`);
   }
 };
 

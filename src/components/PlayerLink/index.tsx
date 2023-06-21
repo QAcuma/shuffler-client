@@ -12,7 +12,7 @@ const PlayerLink: IFC<IPlayerLinkProps> = (props) => {
 
   return (
     <Link
-      to={`/${id}`}
+      to={`/player/${id}`}
       title="Просмотреть историю игрока"
       className={clsx(s.player, className && className)}
     >
