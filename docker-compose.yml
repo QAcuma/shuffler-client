@@ -1,0 +1,13 @@
+version: "3.8"
+name: shuffler
+
+services:
+  shuffler-postgres:
+    container_name: shuffler-client
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "3000"
+    networks:
+      - shuffler
+      - host
