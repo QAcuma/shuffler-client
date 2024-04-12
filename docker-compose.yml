@@ -4,16 +4,10 @@ name: shuffler
 services:
   shuffler-client:
     container_name: shuffler-client
+    network_mode: "host"
     build:
       dockerfile: Dockerfile
     ports:
       - "80:3000"
       - "443:3000"
       - "3000:3000"
-    networks:
-      - host
-
-networks:
-  host:
-    name: host
-    external: true
