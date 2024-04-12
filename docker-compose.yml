@@ -8,13 +8,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000"
-    networks:
-      - shuffler
-      - host
-
-networks:
-  shuffler:
-    driver: bridge
-  host:
-    name: host
-    external: true
