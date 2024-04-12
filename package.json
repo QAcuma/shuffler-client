@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "set REACT_APP_API_URL=http://localhost:8800&& react-scripts start ",
+    "start": "set REACT_APP_API_URL=http://october.local:8800&& react-scripts start ",
     "dev": "set REACT_APP_API_URL=https://shuffler.host&& react-scripts start",
     "build": "react-scripts build",
     "test": "set REACT_APP_BASE_URL=/shuffler-client&& react-scripts start",
