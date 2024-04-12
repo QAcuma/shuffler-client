@@ -2,7 +2,7 @@ version: "3.8"
 name: shuffler
 
 services:
-  shuffler-postgres:
+  shuffler-client:
     container_name: shuffler-client
     build:
       dockerfile: Dockerfile
