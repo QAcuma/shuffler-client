@@ -11,3 +11,7 @@ services:
     networks:
       - shuffler
       - host
+
+networks:
+  shuffler:
+    driver: bridge
